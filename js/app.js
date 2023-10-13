@@ -28,7 +28,6 @@ btnStartDOMElement.addEventListener("click", function(){
 });
 
 
-//             - Dichiarare la variabile "selectDOMElement" e recuparare il suo valore assegnandolo a "numberElement"
 //         - Chiamare la funzione "creaContenDOMElement"
 //         - Dichiarare la variabile "cellDOMElement" per recuperare tutte le celle
 //         - Creare il ciclo for per aggiungere evento su ogni elemento del dom
@@ -42,5 +41,12 @@ function deleteContentDOMElement(DOMElement){
 function valueSelect(selectDOMElement){
     return selectDOMElement.value;
 }
-// - funzione creaContentDOMElement=(numberElement)
+// - funzione creaContentDOMElement(numberElement, classElement, DOMElement)
+function creaContentDOMElement(numberElement, classElement, DOMElement){
+    for (let i = 0; i < (numberElement*numberElement); i++ ){
+        const n = i + 1;
+        const html = `<div class="${classElement}">${n}</div>`;
+        DOMElement.innerHTML += html;
+    }
+}
 // - funzione onCellClick=()

@@ -8,7 +8,7 @@
 - Creare il contenuto html tramite js
     - Creare funzioni
         - funzione deleteContentDOMElement(DOMElement)
-        - funzione creaContentDOMElement(numberElement)
+        - funzione creaContentDOMElement(numberElement, classElement, DOMElement)
         - funzione valueSelect(selectDOMElement)
         - funzione onCellClick()
     - Dichiarare la variabile "gridDOMElement" per recuperare il nostro DOM dove veranno inseriti le celle
