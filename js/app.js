@@ -24,11 +24,23 @@ btnStartDOMElement.addEventListener("click", function(){
     deleteContentDOMElement(gridDOMElement);
     //         - Dichiarare la variabile "numberElement ed assegnare il valore tramite funzione valueSelect
     const numberElement = valueSelect(selectDOMElement);
-    console.log(numberElement);
+    // console.log(numberElement);
+
+    // Dichiarare la variabile className
+    let className;
+    if (numberElement === 10){
+        className = "cell cell-10"
+    } else if (numberElement === 9){
+        className = "cell cell-9"
+    } else if (numberElement === 7){
+        className = "cell cell-7"
+    }
+    //         - Chiamare la funzione "creaContenDOMElement"
+    creaContentDOMElement(numberElement, className, gridDOMElement);
 });
 
 
-//         - Chiamare la funzione "creaContenDOMElement"
+
 //         - Dichiarare la variabile "cellDOMElement" per recuperare tutte le celle
 //         - Creare il ciclo for per aggiungere evento su ogni elemento del dom
 //             - Chiamare la funzione "onCellClick"

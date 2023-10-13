@@ -17,9 +17,9 @@
     - Dichiarare la variabile "numberElement ed assegnare il valore tramite funzione valueSelect
     - Creare evento click sul btnStartDOMElement   
         - Chiamare la funzione "deleteContentDOMElement" per svuotare il nostro contenuto con ogni 
-        - Dichiarare la variabile "numberElement ed assegnare il valore
-            - Dichiarare la variabile "selectDOMElement" e recuparare il suo valore assegnandolo a "numberElement"
-        - Chiamare la funzione "creaContenDOMElement"
+        - Dichiarare la variabile "numberElement ed assegnare il valore tramite funzione valueSelect
+        - Creare la variabile className per poter uttilizare la funzione creaContentDOMElement. Il suo valore dipende dal valore del numberElement
+        - Chiamare la funzione "creaContentDOMElement"
         - Dichiarare la variabile "cellDOMElement" per recuperare tutte le celle
         - Creare il ciclo for per aggiungere evento su ogni elemento del dom
             - Chiamare la funzione "onCellClick"
