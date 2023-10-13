@@ -22,7 +22,9 @@ const selectDOMElement = document.getElementById("select");
 btnStartDOMElement.addEventListener("click", function(){
     //         - Chiamare la funzione "deleteContentDOMElement" per svuotare il nostro contenuto con ogni 
     deleteContentDOMElement(gridDOMElement);
-    //         - Dichiarare la variabile "numberElement ed assegnare il valore
+    //         - Dichiarare la variabile "numberElement ed assegnare il valore tramite funzione valueSelect
+    const numberElement = valueSelect(selectDOMElement);
+    console.log(numberElement);
 });
 
 
