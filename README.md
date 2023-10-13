@@ -9,9 +9,12 @@
     - Creare funzioni
         - funzione deleteContentDOMElement(DOMElement)
         - funzione creaContentDOMElement(numberElement)
+        - funzione valueSelect(selectDOMElement)
         - funzione onCellClick()
     - Dichiarare la variabile "gridDOMElement" per recuperare il nostro DOM dove veranno inseriti le celle
     - Dichiarare la variabile "btnStartDOMElement" per recuperrare il nostro buttone
+    - Dichiarare la variabile "selectDOMElement"
+    - Dichiarare la variabile "numberElement ed assegnare il valore tramite funzione valueSelect
     - Creare evento click sul btnStartDOMElement   
         - Chiamare la funzione "deleteContentDOMElement" per svuotare il nostro contenuto con ogni 
         - Dichiarare la variabile "numberElement ed assegnare il valore
