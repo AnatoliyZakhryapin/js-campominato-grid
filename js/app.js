@@ -16,7 +16,7 @@ const btnStartDOMElement = document.getElementById("btn-start");
 // console.log(btnStartDOMElement);
 //     - Creare evento click sul btn-startDOMElement   
 btnStartDOMElement.addEventListener("click", function(){
-
+    deleteContentDOMElement(gridDOMElement);
 });
 //         - Chiamare la funzione "deleteContentDOMElement" per svuotare il nostro contenuto con ogni 
 //         - Dichiarare la variabile "numberElement ed assegnare il valore
