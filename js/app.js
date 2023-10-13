@@ -8,10 +8,12 @@
 // - Creare il contenuto html tramite js
 
 //     - Dichiarare la variabile "gridDOMElement" per recuperare il nostro DOM dove veranno inseriti le celle
-const gridDOMElement = document.querySelector(".grid")
+const gridDOMElement = document.querySelector(".grid");
 // console.log(gridDOMElement);
 
 //     - Dichiarare la variabile "btnStartDOMElement" per recuperrare il nostro buttone
+const btnStartDOMElement = document.getElementById("btn-start");
+console.log(btnStartDOMElement);
 //     - Creare evento click sul btn-startDOMElement   
 //         - Chiamare la funzione "deleteContentDOMElement" per svuotare il nostro contenuto con ogni 
 //         - Dichiarare la variabile "numberElement ed assegnare il valore
