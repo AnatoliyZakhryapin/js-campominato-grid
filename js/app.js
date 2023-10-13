@@ -39,15 +39,19 @@ btnStartDOMElement.addEventListener("click", function(){
     //         - Chiamare la funzione "creaContenDOMElement"
     creaContentDOMElement(numberElement, className, gridDOMElement);
     //         - Dichiarare la variabile "cellDOMElement" per recuperare tutte le celle
-    const cellDOMElement = gridDOMElement.querySelectorAll(".cell");
-    console.log(cellDOMElement);
+    const cellDOMElements = gridDOMElement.querySelectorAll(".cell");
+    // console.log(cellDOMElement);
+
+    //         - Creare il ciclo for per aggiungere evento su ogni elemento del dom
+    for (let i = 0; i < cellDOMElements.length; i++){
+        const currentCellElement = cellDOMElements[i];
+        // console.log(currentCellElement);
+
+        // - Chiamare l'evento click per currentCell e assegnare la funzione "onCellClick"
+        currentCellElement.addEventListener("click", onCellClick)
+    }
 });
 
-
-
-
-//         - Creare il ciclo for per aggiungere evento su ogni elemento del dom
-//             - Chiamare la funzione "onCellClick"
 // FUNZIONI 
 // - funzione deleteContentDOMElement(DOMElement)
 function deleteContentDOMElement(DOMElement){
@@ -65,4 +69,7 @@ function creaContentDOMElement(numberElement, classElement, DOMElement){
         DOMElement.innerHTML += html;
     }
 }
-// - funzione onCellClick=()
+// - funzione onCellClick()
+function onCellClick(){
+    this.classList.add("selected");
+}

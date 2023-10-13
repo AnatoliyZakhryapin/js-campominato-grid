@@ -22,4 +22,5 @@
         - Chiamare la funzione "creaContentDOMElement"
         - Dichiarare la variabile "cellDOMElement" per recuperare tutte le celle
         - Creare il ciclo for per aggiungere evento su ogni elemento del dom
-            - Chiamare la funzione "onCellClick"
+            - Creare la variabile currentCellElement per sapere quale elemento è stato selezionato
+            - Chiamare l'evento click per currentCell e assegnare la funzione "onCellClick"
