@@ -35,14 +35,17 @@ btnStartDOMElement.addEventListener("click", function(){
     } else if (numberElement == 10){
         className = "cell cell-10"
     }
-    console.log(className)
+    // console.log(className)
     //         - Chiamare la funzione "creaContenDOMElement"
     creaContentDOMElement(numberElement, className, gridDOMElement);
+    //         - Dichiarare la variabile "cellDOMElement" per recuperare tutte le celle
+    const cellDOMElement = gridDOMElement.querySelectorAll(".cell");
+    console.log(cellDOMElement);
 });
 
 
 
-//         - Dichiarare la variabile "cellDOMElement" per recuperare tutte le celle
+
 //         - Creare il ciclo for per aggiungere evento su ogni elemento del dom
 //             - Chiamare la funzione "onCellClick"
 // FUNZIONI 
