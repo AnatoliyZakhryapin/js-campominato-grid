@@ -28,13 +28,14 @@ btnStartDOMElement.addEventListener("click", function(){
 
     // Dichiarare la variabile className
     let className;
-    if (numberElement === 10){
-        className = "cell cell-10"
-    } else if (numberElement === 9){
-        className = "cell cell-9"
-    } else if (numberElement === 7){
+    if (numberElement == 7){
         className = "cell cell-7"
+    } else if (numberElement == 9){
+        className = "cell cell-9"
+    } else if (numberElement == 10){
+        className = "cell cell-10"
     }
+    console.log(className)
     //         - Chiamare la funzione "creaContenDOMElement"
     creaContentDOMElement(numberElement, className, gridDOMElement);
 });
